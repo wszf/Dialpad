@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyDialpad</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+ <!-- Content description for the fake action menu button that brings up the call history
+         activity -->
+    <string name="action_menu_call_history_description">Call History</string>
+     <!-- String describing the Delete/Backspace ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+    -->
+    <string name="description_delete_button">backspace</string>
+     <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+    -->
+    <string name="description_dial_button">dial</string>
+     <!-- Content description for the fake action menu overflow button.
+         This should be same as the description for the real action menu
+         overflow button available in ActionBar.
+         [CHAR LIMIT=NONE] -->
+    <string name="action_menu_overflow_description" msgid="2295659037509008453">More options</string>
+    <!-- String describing the icon used to start a voice search -->
+    <string name="description_start_voice_search">Start voice search</string>
+      <!-- Content description for the button that displays the dialpad
+         [CHAR LIMIT=NONE] -->
+    <string name="action_menu_dialpad_button">dial pad</string>
+      <!-- The digit to be displayed on the 0 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_0_number">0</string>
+    <!-- The digit to be displayed on the 1 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_1_number">1</string>
+    <!-- The digit to be displayed on the 2 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_2_number">2</string>
+    <!-- The digit to be displayed on the 3 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_3_number">3</string>
+    <!-- The digit to be displayed on the 4 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_4_number">4</string>
+    <!-- The digit to be displayed on the 5 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_5_number">5</string>
+    <!-- The digit to be displayed on the 6 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_6_number">6</string>
+    <!-- The digit to be displayed on the 7 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_7_number">7</string>
+    <!-- The digit to be displayed on the 8 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_8_number">8</string>
+    <!-- The digit to be displayed on the 9 key of the dialpad [CHAR LIMIT=1]-->
+    <string name="dialpad_9_number">9</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_star_number">*</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_pound_number">#</string>
+
+    <!--  Do not translate. -->
+    <string name="dialpad_0_letters">+</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_1_letters"></string>
+    <!--  Do not translate. -->
+    <string name="dialpad_2_letters">ABC</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_3_letters">DEF</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_4_letters">GHI</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_5_letters">JKL</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_6_letters">MNO</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_7_letters">PQRS</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_8_letters">TUV</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_9_letters">WXYZ</string>
+    <!--  Do not translate. -->
+    <string name="dialpad_star_letters"></string>
+    <!--  Do not translate. -->
+    <string name="dialpad_pound_letters"></string>
+        <!--  Localized dialer buttons.
+          In English, we don't need a secondary row, so all values are empty.
+          Change these values depending on your language requirements.
+    -->
+    <string name="dialpad_0_2_letters" translatable="false"></string>
+    <string name="dialpad_1_2_letters" translatable="false"></string>
+    <string name="dialpad_2_2_letters"></string>
+    <string name="dialpad_3_2_letters"></string>
+    <string name="dialpad_4_2_letters"></string>
+    <string name="dialpad_5_2_letters"></string>
+    <string name="dialpad_6_2_letters"></string>
+    <string name="dialpad_7_2_letters"></string>
+    <string name="dialpad_8_2_letters"></string>
+    <string name="dialpad_9_2_letters"></string>
+    <string name="dialpad_star_2_letters" translatable="false"></string>
+    <string name="dialpad_pound_2_letters" translatable="false"></string>
+    <!-- Menu item used to add a number from the call log to contacts -->
+    <string name="recentCalls_addToContact">Add to contacts</string>
+     <!-- Menu items for dialpad options as part of Pause and Wait ftr -->
+    <string name="add_2sec_pause">Add 2-sec pause</string>
+    <string name="add_wait">Add wait</string>
+     <string name="dialer_ipcall_title">IPCall</string>
+      <string name="speeddial_title">Speed Dial</string>
+       <!-- Menu item label for call settings [CHAR LIMIT=30] -->
+    <string name="call_settings">Settings</string>
+    <!-- Menu item to create a new contact -->
+    <string name="menu_newContact">New contact</string>
+
+    <!-- Menu item to display all contacts -->
+    <string name="menu_allContacts">All contacts</string>
+    <!-- Hint displayed in dialer search box when there is no query that is currently typed.
+         [CHAR LIMIT=30] -->
+    <string name="dialer_hint_find_contact">Type a name or phone number</string>
+</resources>

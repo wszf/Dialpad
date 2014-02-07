@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<resources>
+
+<color name="dialpad_text_color">#404040</color>
+ <!-- Background color of new dialpad -->
+    <color name="background_dialpad">#faeeeeee</color>
+<!-- Background color where keypad digits are displayed -->
+    <color name="background_digits_dialpad">#f2ffffff</color>
+     <!-- Call button color separated from dialpad_primary_text_color, for better theme support -->
+    <color name="dialpad_call_button_color">#404040</color>
+    
+    <!-- Background color of action bars -->
+    <color name="actionbar_background_color">#ffffff</color>
+     <!-- Primary color of dialpad text, including the call button -->
+    <color name="dialpad_primary_text_color">#404040</color>
+       <!-- Secondary color of dialpad text (used for the letters corresponding to each digit -->
+    <color name="dialpad_secondary_text_color">#888888</color>
+     <!-- Background color of the search box -->
+    <color name="searchbox_background_color">#ffffff</color>
+    <!-- Background color of new dialer activity -->
+    <color name="background_dialer_light">#cecece</color>
+     <color name="dialtacts_frame_color">#33999999</color>
+      <!-- Secondary text color in the Phone app -->
+    <color name="dialtacts_primary_text_color">#000000</color>
+    <color name="dialtacts_secondary_text_color">#888888</color>
+     <!-- Text color of the search box -->
+    <color name="searchbox_text_color">#d3d3d3</color>
+</resources>
