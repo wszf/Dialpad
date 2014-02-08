@@ -318,15 +318,15 @@ public class DialpadFragment extends Fragment
 //            mDigits.getText().clear();
 //        }
 //
-//        if (isDigitsEmpty()) {
-//            mDigitsFilledByIntent = false;
-//            mDigits.setCursorVisible(false);
-//        }
+        if (isDigitsEmpty()) {
+            mDigitsFilledByIntent = false;
+            mDigits.setCursorVisible(false);
+        }
 //
-//        if (mDialpadQueryListener != null) {
-//            mDialpadQueryListener.onDialpadQueryChanged(mDigits.getText().toString());
-//        }
-//        updateDialAndDeleteButtonEnabledState();
+        if (mDialpadQueryListener != null) {
+            mDialpadQueryListener.onDialpadQueryChanged(mDigits.getText().toString());
+        }
+        updateDialAndDeleteButtonEnabledState();
     }
 
     private void registerSensorListener(Sensor sensor) {
@@ -751,8 +751,8 @@ public class DialpadFragment extends Fragment
     public void onResume() {
         super.onResume();
 
-//        final DialtactsActivity activity = (DialtactsActivity) getActivity();
-//        mDialpadQueryListener = activity;
+        final DialtactsActivity activity = (DialtactsActivity) getActivity();
+        mDialpadQueryListener = activity;
 
 //        final StopWatch stopWatch = StopWatch.start("Dialpad.onResume");
 

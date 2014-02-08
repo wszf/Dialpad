@@ -16,6 +16,8 @@
 
 package net.wszf.client.dialpad;
 
+import java.util.ArrayList;
+
 import net.wszf.client.dialpad.dialpad.DialpadFragment;
 import net.wszf.client.dialpad.list.OnListFragmentScrolledListener;
 import net.wszf.client.dialpad.list.OnPhoneNumberPickerActionListener;
@@ -446,24 +448,24 @@ public class DialtactsActivity extends Activity implements View.OnClickListener,
         }
     }
 
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        if (requestCode == ACTIVITY_REQUEST_CODE_VOICE_SEARCH) {
-//            if (resultCode == RESULT_OK) {
-//                final ArrayList<String> matches = data.getStringArrayListExtra(
-//                        RecognizerIntent.EXTRA_RESULTS);
-//                if (matches.size() > 0) {
-//                    final String match = matches.get(0);
-//                    mSearchView.setText(match);
-//                } else {
-//                    Log.e(TAG, "Voice search - nothing heard");
-//                }
-//            } else {
-//                Log.e(TAG, "Voice search failed");
-//            }
-//        }
-//        super.onActivityResult(requestCode, resultCode, data);
-//    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == ACTIVITY_REQUEST_CODE_VOICE_SEARCH) {
+            if (resultCode == RESULT_OK) {
+                final ArrayList<String> matches = data.getStringArrayListExtra(
+                        RecognizerIntent.EXTRA_RESULTS);
+                if (matches.size() > 0) {
+                    final String match = matches.get(0);
+                    mSearchView.setText(match);
+                } else {
+                    Log.e(TAG, "Voice search - nothing heard");
+                }
+            } else {
+                Log.e(TAG, "Voice search failed");
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 
     private void showDialpadFragment(boolean animate) {
         mDialpadFragment.setAdjustTranslationForAnimation(animate);
@@ -902,6 +904,7 @@ public class DialtactsActivity extends Activity implements View.OnClickListener,
                 // fragment manager correctly figure out whatever fragment was last displayed.
                 return;
             }
+            System.out.println("normalizedQuery:"+normalizedQuery);
             mSearchView.setText(normalizedQuery);
         }
     }
