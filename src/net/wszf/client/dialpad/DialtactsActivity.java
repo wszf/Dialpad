@@ -219,9 +219,9 @@ public class DialtactsActivity extends Activity implements View.OnClickListener,
 //                    return;
 //                }
                 mSearchQuery = newText;
-//                if (DEBUG) {
-//                    Log.d(TAG, "onTextChange for mSearchView called with new query: " + s);
-//                }
+                if (DEBUG) {
+                    Log.d(TAG, "onTextChange for mSearchView called with new query: " + s);
+                }
 //
 //                // Show search result with non-empty text. Show a bare list otherwise.
                 if (TextUtils.isEmpty(newText) && getInSearchUi()) {
