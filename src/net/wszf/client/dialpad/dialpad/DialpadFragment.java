@@ -489,7 +489,7 @@ public class DialpadFragment extends Fragment
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (isDigitsEmpty()) {
-                   // hideAndClearDialpad();
+                    hideAndClearDialpad();
                     return true;
                 }
                 return false;
@@ -1365,9 +1365,9 @@ public class DialpadFragment extends Fragment
 //        }
 //    }
 
-//    private void hideAndClearDialpad() {
-//        ((DialtactsActivity) getActivity()).hideDialpadFragment(false, true);
-//    }
+    private void hideAndClearDialpad() {
+        ((DialtactsActivity) getActivity()).hideDialpadFragment(false, true);
+    }
 
     public static class ErrorDialogFragment extends DialogFragment {
         private int mTitleResId;

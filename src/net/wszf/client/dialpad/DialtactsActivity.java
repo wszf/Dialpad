@@ -349,7 +349,8 @@ public class DialtactsActivity extends Activity implements View.OnClickListener,
 //            mSmartDialSearchFragment = (SmartDialSearchFragment) fragment;
 //            mSmartDialSearchFragment.setOnPhoneNumberPickerActionListener(
 //                    mPhoneNumberPickerActionListener);
-//        } else if (fragment instanceof SearchFragment) {
+//        } 
+//        else if (fragment instanceof SearchFragment) {
 //            mRegularSearchFragment = (RegularSearchFragment) fragment;
 //            mRegularSearchFragment.setOnPhoneNumberPickerActionListener(
 //                    mPhoneNumberPickerActionListener);
@@ -904,7 +905,6 @@ public class DialtactsActivity extends Activity implements View.OnClickListener,
                 // fragment manager correctly figure out whatever fragment was last displayed.
                 return;
             }
-            System.out.println("normalizedQuery:"+normalizedQuery);
             mSearchView.setText(normalizedQuery);
         }
     }
